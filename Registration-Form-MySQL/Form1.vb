@@ -3,16 +3,13 @@
     'Handle only Letters
     Private Sub LetterOnly_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FirstNameTxtBox.KeyPress, MiddleNameTxtBox.KeyPress, SurnameTxtBox.KeyPress
         Dim key As String = e.KeyChar
-        If (Not Char.IsLetter(key)) Then
-            e.Handled = True
-        End If
+        e.Handled = If((Char.IsLetter(key) Or (Asc(key) = 8)), False, True)
     End Sub
 
     'Handle only Numbers
     Private Sub NumberOnly_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PhoneNumberTxtBox.KeyPress, AgeTxtBox.KeyPress
-        If (Not Char.IsDigit(e.KeyChar)) Then
-            e.Handled = True
-        End If
+        Dim key As String = e.KeyChar
+        e.Handled = If((Char.IsDigit(key) Or (Asc(key) = 8)), False, True)
     End Sub
 
 End Class

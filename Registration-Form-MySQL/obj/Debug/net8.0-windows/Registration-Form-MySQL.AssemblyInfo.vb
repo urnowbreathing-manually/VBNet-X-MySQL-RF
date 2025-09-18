@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Registration-Form-MySQL"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d115d6f6d4059ed7d8b8b50f8fc152fb8218266"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Registration-Form-MySQL"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Registration-Form-MySQL"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
